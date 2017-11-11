@@ -10,8 +10,24 @@ public class EarthTextScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		if (gameObject.name == "Earth") {
-			myTxt = "Earth is a Good Planet";
+		if (gameObject.name == "Mercury") {
+			
+		} else if (gameObject.name == "Venus") {
+			
+		} else if (gameObject.name == "Earth") {
+			myTxt = "Earth is a Good\nPlanet";
+		} else if (gameObject.name == "Mars") {
+
+		} else if (gameObject.name == "Jupiter") {
+
+		} else if (gameObject.name == "Saturn") {
+
+		} else if (gameObject.name == "Uranus") {
+
+		} else if (gameObject.name == "Neptune") {
+
+		} else if (gameObject.name == "Pluto") {
+
 		}
 	}
 	
