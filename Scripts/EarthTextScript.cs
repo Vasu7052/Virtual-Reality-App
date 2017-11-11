@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class EarthTextScript : MonoBehaviour {
 
+	public string myTxt ;
+	public Text textBox ;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -11,6 +14,10 @@ public class EarthTextScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		changeText ();
+	}
+
+	void changeText(){
+		textBox.text = myText;
 	}
 }
