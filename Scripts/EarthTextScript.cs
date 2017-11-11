@@ -18,7 +18,7 @@ public class EarthTextScript : MonoBehaviour {
 	}
 
 	public void changeText(){
-		textBox.text = myTxt;
+		textBox.text = myTxt.Replace("\\n" , "\n");
 	}
 	public void removeText(){
 		textBox.text = "" ;
