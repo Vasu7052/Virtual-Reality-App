@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class RotateMainCamera : MonoBehaviour {
 
+	public GameObject sun ;
+	public float revolutionSpeed;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -11,6 +14,6 @@ public class RotateMainCamera : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		transform.RotateAround (sun.transform.position, Vector3.down, revolutionSpeed * Time.deltaTime);
 	}
 }
