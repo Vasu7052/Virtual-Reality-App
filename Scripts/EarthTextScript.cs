@@ -20,4 +20,7 @@ public class EarthTextScript : MonoBehaviour {
 	public void changeText(){
 		textBox.text = myTxt;
 	}
+	public void removeText(){
+		textBox.text = "" ;
+	}
 }
