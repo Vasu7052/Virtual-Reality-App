@@ -7,6 +7,7 @@ public class ToogleMovement : MonoBehaviour {
 	public GameObject cameraObject ;
 	public GameObject centerObject ;
 	public float revolutionSpeed;
+	public TextMesh textBox;
 
 	// Use this for initialization
 	void Start () {
@@ -19,20 +20,20 @@ public class ToogleMovement : MonoBehaviour {
 	}
 
 	public void checkToggle(){
-		if (gameObject.name == "Pause") {
+		if (textBox.text == "Pause") {
 			stopMovement ();
 		} else {
 			startMovement ();
 		}
 	}
 
-	void startMovement(){
-		transform.RotateAround (centerObject.transform.position, Vector3.down, 0);
+	public void startMovement(){
+		transform.RotateAround (centerObject.transform.position, Vector3.down, revolutionSpeed * Time.deltaTime);
 		gameObject.name = "Pause";
 	}
 
-	void stopMovement(){
-		transform.RotateAround (centerObject.transform.position, Vector3.down, revolutionSpeed * Time.deltaTime);
+	public void stopMovement(){
+		transform.RotateAround (centerObject.transform.position, Vector3.down,0 );
 		gameObject.name = "Start";
 	}
 
