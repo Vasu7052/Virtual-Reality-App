@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.UI;	
 
 public class EarthTextScript : MonoBehaviour {
 
@@ -18,7 +18,8 @@ public class EarthTextScript : MonoBehaviour {
 	}
 
 	public void changeText(){
-		textBox.text = myTxt.Replace("\\n" , "\n");
+		textBox.text = gameObject.name;
+		Debug.Log (gameObject.name);
 	}
 	public void removeText(){
 		textBox.text = "" ;
