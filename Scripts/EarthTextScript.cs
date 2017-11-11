@@ -5,12 +5,14 @@ using UnityEngine.UI;
 
 public class EarthTextScript : MonoBehaviour {
 
-	public string myTxt ;
+	string myTxt ;
 	public Text textBox ;
 
 	// Use this for initialization
 	void Start () {
-		
+		if (gameObject.name == "Earth") {
+			myTxt = "Earth is a Good Planet";
+		}
 	}
 	
 	// Update is called once per frame
@@ -18,8 +20,7 @@ public class EarthTextScript : MonoBehaviour {
 	}
 
 	public void changeText(){
-		textBox.text = gameObject.name;
-		Debug.Log (gameObject.name);
+		textBox.text = myTxt;
 	}
 	public void removeText(){
 		textBox.text = "" ;
