@@ -7,6 +7,7 @@ public class EarthTextScript : MonoBehaviour {
 
 	string myTxt ;
 	public Text textBox ;
+	public Text textBox2 ;
 
 	// Use this for initialization
 	void Start () {
@@ -39,8 +40,10 @@ public class EarthTextScript : MonoBehaviour {
 
 	public void changeText(){
 		textBox.text = myTxt;
+		textBox2.text = myTxt;
 	}
 	public void removeText(){
 		textBox.text = "" ;
+		textBox2.text = "" ;
 	}
 }
