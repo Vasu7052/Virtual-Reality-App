@@ -15,10 +15,9 @@ public class EarthTextScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		changeText ();
 	}
 
-	void changeText(){
-		textBox.text = myText;
+	public void changeText(){
+		textBox.text = myTxt;
 	}
 }
